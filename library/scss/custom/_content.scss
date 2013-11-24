@@ -1,0 +1,59 @@
+.content-header, .row.content-header {
+	padding-bottom: 1.5em;
+	margin-bottom: 1.5em;
+	border-bottom: 1px solid $dark-grey;
+}
+
+article {
+	border-color: $dark-grey;
+	border-style: dashed;
+	border-width: 0 0 1px;
+	margin-bottom: 1.5em;
+
+	aside {
+		text-align: center;
+	}
+	
+	.article-footer {
+		margin: 0 0 1.5em;
+	}
+}
+
+.post-date {
+	border-radius: 100%;
+	background: $primary-color;
+	color: #fff;
+	
+	
+	margin-bottom: $paragraph-margin-bottom;
+	
+	width: 70px;
+	height: 70px;
+	padding: 5px 10px;
+	float: left;
+	
+	.month {
+	}
+	.day {
+	}
+	.year {
+	}
+}
+
+.post-categories, .post-categories li {
+	margin: 0;
+	font-size: $xs-font-size;
+}
+
+.comments-count {
+	i:before {
+		content: "";
+	}
+	
+	a {
+		color: inherit;
+		&:hover {
+			color: $primary-color;
+		}
+	}
+}

@@ -1,0 +1,20 @@
+@import "variables";
+
+body {
+	float: left;
+	width: 100%;
+}
+
+#container {
+	background: $light-grey;
+	border-right: 1px solid $dark-grey;
+	margin-left: $sidenav-width;
+	
+	.admin-bar & {
+		//margin-top: 28px;
+	}
+}
+
+.category-blog #container {
+	margin-left: $sidenav-width;
+}
