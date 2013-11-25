@@ -20,8 +20,14 @@
 		}
 		
 		.cameraSlide img {
+		/*
 			max-width: none;
 			min-width: 100%;
+			min-height: 100%;
+			width: 100% !important;
+			height: auto !important;
+			margin: 0 !important;
+		*/
 		}
 		
 		.camera_prev {
