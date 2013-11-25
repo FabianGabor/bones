@@ -9,6 +9,28 @@ article {
 	border-style: dashed;
 	border-width: 0 0 1px;
 	margin-bottom: 1.5em;
+	
+	.excerpt-read-more {		
+		overflow: hidden;
+		display: block;
+		float: right;
+		
+		/*display: inline-block;*/
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		line-height: 1.5;
+		visibility: hidden;
+		width: 1em;
+		height: 1.5em;
+		
+		&:before {
+		  content: "";
+		  visibility: visible;
+		}
+	}
+	
+	
 
 	aside {
 		text-align: center;
