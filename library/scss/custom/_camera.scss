@@ -32,17 +32,48 @@
 			left: 50%;			
 		}
 		.camera_prev, .camera_next, .camera_commands {
-			top: auto;
-			bottom: 0;
-			margin-bottom: 1.5em;
+			top: 0;			
+			margin-top: 1.5em;
 		}
 		
 		.camera_pag {
 			position: absolute;
-			top: 0;
-			right: 0;
-			margin-top: 1.5em;
-			margin-right: 1.5em;
+			bottom: 0;
+			width: 100%;			
+			
+			.camera_pag_ul {
+				text-align: center;
+				
+				li {
+					background: none;
+					border: 2px solid white;
+					width: 12px;
+					height: 12px;
+					
+					&.cameracurrent {
+						background: white;
+					}
+					
+					span {
+						display: none;
+					}
+				}
+			}
 		}
 	}
+	
+	.camera_command_wrap {
+		position: absolute;
+		bottom: 0;
+	}
+	
+	.camera_visThumb img{
+		max-width: 100%;
+	}
+	
+	.camera_thumbs_cont {
+		background: none;
+		box-shadow: none;
+	}
 }
+
