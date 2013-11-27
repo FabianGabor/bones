@@ -7078,15 +7078,8 @@ article .article-footer {
   top: 0;
   width: 100%;
 }
-.page-template-page-fullscreen-gallery-php .camera_wrap .cameraSlide img {
-  /*
-  	max-width: none;
-  	min-width: 100%;
-  	min-height: 100%;
-  	width: 100% !important;
-  	height: auto !important;
-  	margin: 0 !important;
-  */
+.page-template-page-fullscreen-gallery-php .camera_wrap .cameraSlide {
+  background: white;
 }
 .page-template-page-fullscreen-gallery-php .camera_wrap .camera_prev {
   right: 50%;
