@@ -7044,6 +7044,15 @@ article .article-footer {
   color: #008cba;
 }
 
+.comment-nav {
+  float: left;
+  width: 100%;
+}
+
+.commentlist {
+  list-style: none;
+}
+
 .breadcrumbs.clean {
   border: none;
   background: none;

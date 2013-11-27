@@ -1,23 +1,105 @@
 <?php get_header(); ?>
 
+	<div class="large-12 columns content-header">
+	
+		
+			<?php if (is_category()) { ?>
+				<h1 class="archive-title xxl">
+					<?php single_cat_title(); ?>
+				</h1>
+
+			<?php } elseif (is_tag()) { ?>
+				<h1 class="archive-title xxl">
+					<?php single_tag_title(); ?>
+				</h1>
+
+			<?php } elseif (is_author()) {
+				global $post;
+				$author_id = $post->post_author;
+			?>
+			
+				
+			
+				<h1 class="archive-title h2">
+
+					<span><?php _e( 'Posts By:', 'bonestheme' ); ?></span> <?php the_author_meta('display_name', $author_id); ?>
+
+				</h1>
+			<?php } elseif (is_day()) { ?>
+				<h1 class="archive-title h2">
+					<span><?php _e( 'Daily Archives:', 'bonestheme' ); ?></span> <?php the_time('l, F j, Y'); ?>
+				</h1>
+
+			<?php } elseif (is_month()) { ?>
+					<h1 class="archive-title h2">
+						<span><?php _e( 'Monthly Archives:', 'bonestheme' ); ?></span> <?php the_time('F Y'); ?>
+					</h1>
+
+			<?php } elseif (is_year()) { ?>
+					<h1 class="archive-title h2">
+						<span><?php _e( 'Yearly Archives:', 'bonestheme' ); ?></span> <?php the_time('Y'); ?>
+					</h1>
+			<?php } ?>
+			
+			<?php if ( function_exists('yoast_breadcrumb') ) {
+				#yoast_breadcrumb('<nav class="breadcrumbs clean">','</nav>');
+			} 
+			?>
+			
+		
+	</div>
+
 <div id="main" class="large-8 columns" role="main">
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-	<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article">
+	<article id="post-<?php the_ID(); ?>" <?php #post_class( 'clearfix' ); ?> role="article">
 
-		<header class="article-header">
+		<div class="row">
+			<aside class="large-2 columns">
+				<?php
+				printf(__( '
+					<time class="post-date" datetime="%1$s" pubdate>					
+						<div class="month">%2$s</div>
+						<div class="day h3">%3$s</div>
+						<div class="year">%4$s</div>
+					</time>
+					
+					
+					
+					', 'bonestheme' 
+					), 
+					get_the_time('Y-m-j'), 
+					get_the_time(__( 'M', 'bonestheme' )), 
+					get_the_time(__( 'j', 'bonestheme' )), 
+					get_the_time(__( 'Y', 'bonestheme' )), 				
+					get_the_category_list(', ')
+				);
+				?>
+				
+				<p class="comments-count">
+					<a href="<?php the_permalink() ?>#comments"><i class="fa fa-comment-o fa-lg"></i><?php comments_number( ' 0', ' 1', ' %' ); ?></a>
+				</p>
+				
+				<div class="h6">Categories:</div>
+				<?php echo get_the_category_list( ); ?> 
+			</aside>
+			
+			<div class="large-10 columns">
+			
+			
+				<header class="article-header">
+					<h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+				</header>
 
-			<h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-			<p class="byline vcard"><?php
-				printf( __( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span> <span class="amp">&</span> filed under %4$s.', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), bones_get_the_author_posts_link(), get_the_category_list(', '));
-			?></p>
-
-		</header>
-
-		<section class="entry-content clearfix">
-			<?php the_content(); ?>
-		</section>
+				<section class="entry-content clearfix">
+					<?php # the_content(); ?>
+					<?php the_excerpt(); ?>
+				</section>
+			
+			</div>
+		
+		</div>
 
 		<footer class="article-footer">
 			<p class="tags"><?php the_tags( '<span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '' ); ?></p>

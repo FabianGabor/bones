@@ -65,9 +65,6 @@
 						<div class="day h3">%3$s</div>
 						<div class="year">%4$s</div>
 					</time>
-					
-					
-					
 					', 'bonestheme' 
 					), 
 					get_the_time('Y-m-j'), 
@@ -85,9 +82,6 @@
 				
 				<div class="h6">Categories:</div>
 				<?php echo get_the_category_list( ); ?> 
-				
-				
-				
 				
 			</aside>
 			
