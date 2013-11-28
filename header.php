@@ -50,6 +50,7 @@
 		
 		
 		
+		<?php echo '<!--' . basename( get_page_template() ) . '-->'; ?>
 		
 		
 		
