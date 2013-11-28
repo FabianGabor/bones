@@ -42,7 +42,7 @@ function bones_ahoy() {
 	// adding sidebars to Wordpress (these are created in functions.php)
 	add_action( 'widgets_init', 'bones_register_sidebars' );
 	// adding the bones search form (created in functions.php)
-	add_filter( 'get_search_form', 'bones_wpsearch' );
+	//add_filter( 'get_search_form', 'bones_wpsearch' );
 
 	// cleaning up random code around images
 	add_filter( 'the_content', 'bones_filter_ptags_on_images' );
@@ -365,7 +365,7 @@ function bones_page_navi() {
 	if ( $wp_query->max_num_pages <= 1 )
 		return;
 	
-	echo '<nav class="pagination">';
+	echo '<nav class="pagination pagination-centered">';
 	
 		echo paginate_links( array(
 			'base' 			=> str_replace( $bignum, '%#%', esc_url( get_pagenum_link($bignum) ) ),

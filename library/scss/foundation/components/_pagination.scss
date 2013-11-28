@@ -111,6 +111,12 @@ $pagination-link-current-active-bg: $primary-color !default;
       @if $use-default-classes {
         &.unavailable { @include pagination-unavailable-item(); }
         &.current { @include pagination-current-item(); }
+		
+		& .current { 
+			@include pagination-current-item(false); 
+			@include radius($global-radius);
+			display: block;
+		}
       }
     }
   }
@@ -129,7 +135,7 @@ $pagination-link-current-active-bg: $primary-color !default;
 
 @include exports("pagination") {
   @if $include-html-nav-classes {
-    ul.pagination {
+    ul.pagination, ul.page-numbers {
       @include pagination;
     }
 
@@ -137,7 +143,7 @@ $pagination-link-current-active-bg: $primary-color !default;
     .pagination-centered {
       @include pagination-container(true);
 
-      ul.pagination {
+      ul.pagination, ul.page-numbers {
         @include pagination(true, false);
       }
     }

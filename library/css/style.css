@@ -4430,18 +4430,18 @@ kbd {
     display: none;
   }
 }
-ul.pagination {
+ul.pagination, ul.page-numbers {
   display: block;
   height: 1.84615rem;
   margin-left: -0.38462rem;
 }
-ul.pagination li {
+ul.pagination li, ul.page-numbers li {
   height: 1.84615rem;
   color: #222222;
   font-size: 1.07692rem;
   margin-left: 0.38462rem;
 }
-ul.pagination li a {
+ul.pagination li a, ul.page-numbers li a {
   display: block;
   padding: 0.07692rem 0.76923rem 0.07692rem;
   color: #999999;
@@ -4449,26 +4449,41 @@ ul.pagination li a {
   border-radius: 3px;
 }
 ul.pagination li:hover a,
-ul.pagination li a:focus {
+ul.pagination li a:focus, ul.page-numbers li:hover a,
+ul.page-numbers li a:focus {
   background: #e6e6e6;
 }
-ul.pagination li.unavailable a {
+ul.pagination li.unavailable a, ul.page-numbers li.unavailable a {
   cursor: default;
   color: #999999;
 }
-ul.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus {
+ul.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus, ul.page-numbers li.unavailable:hover a, ul.page-numbers li.unavailable a:focus {
   background: transparent;
 }
-ul.pagination li.current a {
+ul.pagination li.current a, ul.page-numbers li.current a {
   background: #008cba;
   color: white;
   font-weight: bold;
   cursor: default;
 }
-ul.pagination li.current a:hover, ul.pagination li.current a:focus {
+ul.pagination li.current a:hover, ul.pagination li.current a:focus, ul.page-numbers li.current a:hover, ul.page-numbers li.current a:focus {
   background: #008cba;
 }
-ul.pagination li {
+ul.pagination li .current, ul.page-numbers li .current {
+  height: auto;
+  padding: 0.07692rem 0.76923rem 0.07692rem;
+  background: #008cba;
+  color: white;
+  font-weight: bold;
+  cursor: default;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  display: block;
+}
+ul.pagination li .current:hover, ul.pagination li .current:focus, ul.page-numbers li .current:hover, ul.page-numbers li .current:focus {
+  background: #008cba;
+}
+ul.pagination li, ul.page-numbers li {
   float: left;
   display: block;
 }
@@ -4477,7 +4492,7 @@ ul.pagination li {
 .pagination-centered {
   text-align: center;
 }
-.pagination-centered ul.pagination li {
+.pagination-centered ul.pagination li, .pagination-centered ul.page-numbers li {
   float: none;
   display: inline-block;
 }
@@ -6977,6 +6992,9 @@ body {
   border-right: 1px solid #eaeaea;
   margin-left: 300px;
 }
+.single #container {
+  margin-top: 1.5em;
+}
 
 .category-blog #container {
   margin-left: 300px;
@@ -6986,6 +7004,10 @@ body {
   padding-bottom: 1.5em;
   margin-bottom: 1.5em;
   border-bottom: 1px solid #eaeaea;
+}
+
+.article-header {
+  margin-bottom: 1.5em;
 }
 
 article {
@@ -7105,6 +7127,7 @@ article .article-footer {
   border: 2px solid white;
   width: 12px;
   height: 12px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
 }
 .page-template-page-fullscreen-gallery-php .camera_wrap .camera_pag .camera_pag_ul li.cameracurrent {
   background: white;
