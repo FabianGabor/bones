@@ -26,13 +26,17 @@
 		.camera_prev {
 			right: 50%;
 			left: auto;
+			margin-right: 0.75em;
 		}
 		.camera_next {
-			left: 50%;			
+			left: 50%;
+			margin-left: 0.75em;
 		}
 		.camera_prev, .camera_next, .camera_commands {
 			top: 0;			
 			margin-top: 1.5em;
+			border-radius: 100%;
+			box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
 		}
 		
 		.camera_pag {
@@ -51,7 +55,7 @@
 					box-shadow: 0 0 3px 0 rgba(0,0,0,.5);
 					
 					&.cameracurrent {
-						background: white;
+						background: $primary-color;
 					}
 					
 					span {

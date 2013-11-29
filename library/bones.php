@@ -182,7 +182,7 @@ function bones_scripts_and_styles() {
 		wp_enqueue_script( 'foundation' );
 		wp_enqueue_script( 'reveal' );
 		wp_enqueue_script( 'sidenav' );
-		wp_enqueue_script( 'tooltip' );
+		//wp_enqueue_script( 'tooltip' );
 
 	}
 }

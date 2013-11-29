@@ -50,6 +50,20 @@ article {
 	.article-footer {
 		margin: 0 0 1.5em;
 	}
+	
+	.entry-content {
+		a {
+			border-bottom: 1px dotted #A5A5A5;
+		}
+		
+		img {
+			display: block;
+			float: left;
+			width: 100%;
+			height: auto;
+			margin: 0 0 1.5em;
+		}
+	}
 }
 
 .post-date {
