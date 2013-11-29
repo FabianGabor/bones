@@ -2,13 +2,13 @@
 
 			
 
-<div id="main" class="large-8 columns" role="main">
+<div id="main" class="large-8 medium-8 columns" role="main">
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 		<article id="post-<?php the_ID(); ?>" <?php #post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 			<div class="row">
-				<aside class="large-2 columns">
+				<aside class="large-2 medium-2 columns">
 					<?php
 					printf(__( '
 						<time class="post-date" datetime="%1$s" pubdate>					
@@ -34,7 +34,7 @@
 					<?php echo get_the_category_list( ); ?>
 				</aside>
 				
-				<div class="large-10 columns">
+				<div class="large-10 medium-10 columns">
 					<header class="article-header">
 						<h1 class="entry-title single-title h2" itemprop="headline"><?php the_title(); ?></h1>
 					</header>

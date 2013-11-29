@@ -14,8 +14,10 @@
 	transition: 500ms ease-out;
 	
 	&.sidenav-idle {
+
 		-webkit-transform: translateX(- $sidenav-width);
-		transform: translateX(- $sidenav-width); 
+		transform: translateX(- $sidenav-width);
+
 	}
 	
 	.admin-bar & {
@@ -36,5 +38,14 @@
 		width: 100%;
 		text-align: center;
 		text-transform: uppercase;
+	}
+}
+
+@media #{$large-up} {
+	.sidenav {
+		&.sidenav-idle {
+			-webkit-transform: none;
+			transform: none; 
+		}
 	}
 }

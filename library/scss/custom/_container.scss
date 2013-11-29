@@ -8,17 +8,22 @@ body {
 #container {
 	background: $light-grey;
 	border-right: 1px solid $dark-grey;
-	margin-left: $sidenav-width;
+	//padding-left: $sidenav-width;
 	
-	.admin-bar & {
-		//margin-top: 28px;
-	}
+
 	
 	.single & {
-		margin-top: 1.5em;
+		padding-top: 1.5em;
 	}
 }
 
 .category-blog #container {
-	margin-left: $sidenav-width;
+	//padding-left: $sidenav-width;
+}
+
+
+@media #{$large-up} {
+	#container {
+		padding-left: $sidenav-width;
+	}
 }

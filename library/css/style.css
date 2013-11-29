@@ -1815,8 +1815,8 @@ select {
   position: relative;
   padding: 1.07692rem 1.84615rem 1.07692rem 1.07692rem;
   font-size: 1rem;
-  background-color: #008cba;
-  border-color: #0079a1;
+  background-color: #630947;
+  border-color: #4c0736;
   color: white; }
   .alert-box .close {
     font-size: 1.69231rem;
@@ -2174,7 +2174,7 @@ select {
     .breadcrumbs > * a,
     .breadcrumbs > * span {
       text-transform: uppercase;
-      color: #008cba; }
+      color: #630947; }
     .breadcrumbs > *.current {
       cursor: default;
       color: #333333; }
@@ -2218,8 +2218,8 @@ button, .button {
   padding-left: 2.46154rem;
   font-size: 1.23077rem;
   /*     @else                            { font-size: $padding - rem-calc(2); } */
-  background-color: #008cba;
-  border-color: #0079a1;
+  background-color: #630947;
+  border-color: #4c0736;
   color: white;
   -webkit-transition: background-color 300ms ease-out;
   -moz-transition: background-color 300ms ease-out;
@@ -2230,7 +2230,7 @@ button, .button {
   border: none;
   font-weight: normal !important; }
   button:hover, button:focus, .button:hover, .button:focus {
-    background-color: #0079a1; }
+    background-color: #4c0736; }
   button:hover, button:focus, .button:hover, .button:focus {
     color: white; }
   button.secondary, .button.secondary {
@@ -2295,19 +2295,19 @@ button, .button {
     -webkit-border-radius: 1000px;
     border-radius: 1000px; }
   button.disabled, button[disabled], .button.disabled, .button[disabled] {
-    background-color: #008cba;
-    border-color: #0079a1;
+    background-color: #630947;
+    border-color: #4c0736;
     color: white;
     cursor: default;
     opacity: 0.7;
     -webkit-box-shadow: none;
     box-shadow: none; }
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-      background-color: #0079a1; }
+      background-color: #4c0736; }
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
       color: white; }
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-      background-color: #008cba; }
+      background-color: #630947; }
     button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
       background-color: #e7e7e7;
       border-color: #dadada;
@@ -3361,7 +3361,7 @@ kbd {
   margin-bottom: inherit;
   padding: 0.30769rem 0.61538rem 0.46154rem;
   font-size: 0.84615rem;
-  background-color: #008cba;
+  background-color: #630947;
   color: white; }
   .label.radius {
     -webkit-border-radius: 3px;
@@ -3658,16 +3658,16 @@ ul.pagination, ul.page-numbers {
     ul.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus, ul.page-numbers li.unavailable:hover a, ul.page-numbers li.unavailable a:focus {
       background: transparent; }
     ul.pagination li.current a, ul.page-numbers li.current a {
-      background: #008cba;
+      background: #630947;
       color: white;
       font-weight: bold;
       cursor: default; }
       ul.pagination li.current a:hover, ul.pagination li.current a:focus, ul.page-numbers li.current a:hover, ul.page-numbers li.current a:focus {
-        background: #008cba; }
+        background: #630947; }
     ul.pagination li .current, ul.page-numbers li .current {
       height: auto;
       padding: 0.07692rem 0.76923rem 0.07692rem;
-      background: #008cba;
+      background: #630947;
       color: white;
       font-weight: bold;
       cursor: default;
@@ -3675,7 +3675,7 @@ ul.pagination, ul.page-numbers {
       border-radius: 3px;
       display: block; }
       ul.pagination li .current:hover, ul.pagination li .current:focus, ul.page-numbers li .current:hover, ul.page-numbers li .current:focus {
-        background: #008cba; }
+        background: #630947; }
   ul.pagination li, ul.page-numbers li {
     float: left;
     display: block; }
@@ -3709,10 +3709,10 @@ ul.pagination, ul.page-numbers {
   .panel.callout {
     border-style: solid;
     border-width: 1px;
-    border-color: #baeeff;
+    border-color: #f378cd;
     margin-bottom: 1.53846rem;
     padding: 1.53846rem;
-    background: #edfbff; }
+    background: #f7a7de; }
     .panel.callout > :first-child {
       margin-top: 0; }
     .panel.callout > :last-child {
@@ -3725,7 +3725,7 @@ ul.pagination, ul.page-numbers {
       .panel.callout h1.subheader, .panel.callout h2.subheader, .panel.callout h3.subheader, .panel.callout h4.subheader, .panel.callout h5.subheader, .panel.callout h6.subheader {
         line-height: 1.4; }
     .panel.callout a {
-      color: #008cba; }
+      color: #630947; }
   .panel.radius {
     -webkit-border-radius: 3px;
     border-radius: 3px; }
@@ -3784,7 +3784,7 @@ ul.pagination, ul.page-numbers {
   padding: 0.15385rem;
   margin-bottom: 0.76923rem; }
   .progress .meter {
-    background: #008cba;
+    background: #630947;
     height: 100%;
     display: block; }
   .progress.secondary .meter {
@@ -3889,7 +3889,7 @@ ul.pagination, ul.page-numbers {
     font-size: 1.07692rem; }
     .side-nav li a {
       display: block;
-      color: #008cba; }
+      color: #630947; }
     .side-nav li.active > a:first-child {
       color: #4d4d4d;
       font-weight: normal;
@@ -4022,7 +4022,7 @@ ul.pagination, ul.page-numbers {
       .sub-nav li a:hover, .post-categories dt a:hover,
       .post-categories dd a:hover,
       .post-categories li a:hover {
-        color: #0079a1; }
+        color: #4c0736; }
     .sub-nav dt.active a,
     .sub-nav dd.active a,
     .sub-nav li.active a, .post-categories dt.active a,
@@ -4031,7 +4031,7 @@ ul.pagination, ul.page-numbers {
       -webkit-border-radius: 3px;
       border-radius: 3px;
       font-weight: normal;
-      background: #008cba;
+      background: #630947;
       padding: 0.23077rem 1.23077rem;
       cursor: default;
       color: white; }
@@ -4040,7 +4040,7 @@ ul.pagination, ul.page-numbers {
       .sub-nav li.active a:hover, .post-categories dt.active a:hover,
       .post-categories dd.active a:hover,
       .post-categories li.active a:hover {
-        background: #0079a1; }
+        background: #4c0736; }
 
 div.switch {
   position: relative;
@@ -4318,8 +4318,8 @@ table {
   -moz-transition: all 200ms ease-out;
   transition: all 200ms ease-out; }
   .th:hover, .th:focus {
-    -webkit-box-shadow: 0 0 6px 1px rgba(0, 140, 186, 0.5);
-    box-shadow: 0 0 6px 1px rgba(0, 140, 186, 0.5); }
+    -webkit-box-shadow: 0 0 6px 1px rgba(99, 9, 71, 0.5);
+    box-shadow: 0 0 6px 1px rgba(99, 9, 71, 0.5); }
   .th.radius {
     -webkit-border-radius: 3px;
     border-radius: 3px; }
@@ -4335,8 +4335,8 @@ a.th {
   font-weight: bold;
   color: #333333; }
   .has-tip:hover, .has-tip:focus {
-    border-bottom: dotted 1px #003f54;
-    color: #008cba; }
+    border-bottom: dotted 1px #050004;
+    color: #630947; }
   .has-tip.tip-left, .has-tip.tip-right {
     float: none !important; }
 
@@ -4365,8 +4365,8 @@ a.th {
     border-color: transparent transparent #333333 transparent;
     top: -10px; }
   .tooltip.opened {
-    color: #008cba !important;
-    border-bottom: dotted 1px #003f54 !important; }
+    color: #630947 !important;
+    border-bottom: dotted 1px #050004 !important; }
 
 .tap-to-close {
   display: block;
@@ -4433,11 +4433,11 @@ td {
 
 /* Default Link Styles */
 a {
-  color: #008cba;
+  color: #630947;
   text-decoration: none;
   line-height: inherit; }
   a:hover, a:focus {
-    color: #0079a1; }
+    color: #4c0736; }
   a img {
     border: none; }
 
@@ -4874,12 +4874,12 @@ meta.foundation-mq-topbar {
     font-weight: normal;
     background: #333333; }
     .top-bar-section ul li > a.button {
-      background: #008cba;
+      background: #630947;
       font-size: 1rem;
       padding-right: 15px;
       padding-left: 15px; }
       .top-bar-section ul li > a.button:hover {
-        background: #006687; }
+        background: #340525; }
     .top-bar-section ul li > a.button.secondary {
       background: #e7e7e7; }
       .top-bar-section ul li > a.button.secondary:hover {
@@ -4896,10 +4896,10 @@ meta.foundation-mq-topbar {
     background: #272727;
     color: white; }
   .top-bar-section ul li.active > a {
-    background: #008cba;
+    background: #630947;
     color: white; }
     .top-bar-section ul li.active > a:hover {
-      background: #0079a1; }
+      background: #4c0736; }
   .top-bar-section .has-form {
     padding: 15px; }
   .top-bar-section .has-dropdown {
@@ -5065,7 +5065,7 @@ meta.foundation-mq-topbar {
     background: #272727;
     color: white; }
   .no-js .top-bar-section ul li:active > a {
-    background: #008cba;
+    background: #630947;
     color: white; }
   .no-js .top-bar-section .has-dropdown:hover > .dropdown {
     display: block; } }
@@ -5777,7 +5777,7 @@ article {
 
 .post-date {
   border-radius: 100%;
-  background: #008cba;
+  background: #630947;
   color: #fff;
   margin-bottom: 1.53846rem;
   width: 70px;
@@ -5795,7 +5795,7 @@ article {
 .comments-count a {
   color: inherit; }
   .comments-count a:hover {
-    color: #008cba; }
+    color: #630947; }
 
 .commentlist .comment {
   float: left;

@@ -50,14 +50,14 @@
 	
 </div>
 	
-<div id="main" class="large-8 columns" role="main">
+<div id="main" class="large-8 medium-8 columns" role="main">
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 	<article id="post-<?php the_ID(); ?>" <?php #post_class( 'row' ); ?> role="article">
 		
 		<div class="row">
-			<aside class="large-2 columns">
+			<aside class="large-2 medium-2 columns">
 				<?php
 				printf(__( '
 					<time class="post-date" datetime="%1$s" pubdate>					
@@ -85,7 +85,7 @@
 				
 			</aside>
 			
-			<div class="large-10 columns">
+			<div class="large-10 medium-10 columns">
 
 				<header class="article-header">
 					<h3 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>			

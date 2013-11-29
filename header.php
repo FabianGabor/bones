@@ -55,7 +55,7 @@
 		
 		
 		
-		<header id="header-wrap" class="header sidenav <?php if ( basename( get_page_template() ) == 'page-fullscreen-gallery.php' ) echo 'auto-hide'; ?>" role="banner" data-menutimeout="3">
+		<header id="header-wrap" class="header sidenav auto-hide <?php if ( basename( get_page_template() ) == 'page-fullscreen-gallery.php' ) #echo 'auto-hide'; ?>" role="banner" data-menutimeout="2">
 			<div class="logo">				
 				
 				<?php if ( get_theme_mod( 'bones_logo' ) ) : ?>				
