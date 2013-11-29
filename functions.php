@@ -89,6 +89,14 @@ function bones_register_sidebars() {
 		'before_title' => '<h4 class="widgettitle">',
 		'after_title' => '</h4>',
 	));
+	
+	register_sidebar(array(
+		'id' => 'sidenav',
+		'name' => __( 'Sidenav', 'bonestheme' ),
+		'description' => __( 'The second (secondary) sidebar.', 'bonestheme' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',		
+	));
 
 	/*
 	to add more sidebars or widgetized areas, just copy

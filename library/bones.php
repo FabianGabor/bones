@@ -149,8 +149,15 @@ function bones_scripts_and_styles() {
 		//adding scripts file in the footer
 		wp_register_script( 'bones-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
 		
-		wp_register_script( 'jquery', '//code.jquery.com/jquery-1.10.2.min.js', false, null, true );
+		wp_register_script( 'jquery', '//code.jquery.com/jquery-2.0.3.min.js', false, null, true );
 		wp_register_script( 'idle-timer', get_template_directory_uri() . '/library/js/vendor/idle-timer.js', array( 'jquery' ), null, true );
+		
+		
+		wp_register_script( 'foundation', get_template_directory_uri() . '/library/js/foundation/foundation.js', array( 'jquery' ), null, true );
+		wp_register_script( 'reveal', get_template_directory_uri() . '/library/js/foundation/foundation.reveal.js', array( 'foundation' ), null, true );
+		wp_register_script( 'tooltip', get_template_directory_uri() . '/library/js/foundation/foundation.tooltip.js', array( 'foundation' ), null, true );
+		
+		wp_register_script( 'sidenav', get_template_directory_uri() . '/library/js/vendor/sidenav.js', array( 'jquery', 'foundation' ), null, true );
 
 		// enqueue styles and scripts
 		wp_enqueue_script( 'bones-modernizr' );
@@ -170,8 +177,12 @@ function bones_scripts_and_styles() {
 		#wp_enqueue_script( 'bones-js' );
 		
 		wp_enqueue_script( 'jquery' );
-		wp_enqueue_script( 'idle-timer' );
-				
+		//wp_enqueue_script( 'idle-timer' );
+		
+		wp_enqueue_script( 'foundation' );
+		wp_enqueue_script( 'reveal' );
+		wp_enqueue_script( 'sidenav' );
+		wp_enqueue_script( 'tooltip' );
 
 	}
 }

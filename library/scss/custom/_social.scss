@@ -1,0 +1,19 @@
+.social-media {
+	bottom: 0;
+	color: rgba(255, 255, 255, 0.7);
+	left: 0;
+	margin-bottom: 3em;
+	position: absolute;
+	width: 100%;
+	
+	a {
+		color: rgba(255, 255, 255, 0.7);
+		display: inline-block;
+		margin: 0 0.2rem;
+		transition: 250ms;
+		
+		&:hover {
+			color: #fff;
+		}
+	}
+}

@@ -27,7 +27,7 @@ $button-font-weight: normal !default;
 $button-font-align: center !default;
 
 // We use these to control various hover effects.
-$button-function-factor: 5% !default;
+$button-function-factor: 10% !default;
 
 // We use these to control button border styles.
 $button-border-width: 1px !default;
@@ -139,7 +139,7 @@ $button-disabled-opacity: 0.7 !default;
     background-color: $bg;
     border-color: darken($bg, $button-function-factor);
     &:hover,
-    &:focus { background-color: darken($bg, $button-function-factor); }
+    &:focus { background-color: lighten($bg, $button-function-factor); }
 
     // We control the text color for you based on the background color.
     @if $bg-lightness > 70% {
