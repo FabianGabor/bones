@@ -40,6 +40,10 @@
 	</head>
 
 	<body <?php body_class(); ?>>
+	
+	<?php if ( basename( get_page_template() ) == 'page-home.php' ) { ?>			
+		<div id="container-home" class="row">
+	<?php } else { ?>
 		
 		<div id="sidenav" class="sidenav-idle">
 			<header id="header-wrap" class="header sidenav auto-hide sidenav-idle<?php if ( basename( get_page_template() ) == 'page-fullscreen-gallery.php' ) #echo 'auto-hide'; ?>" role="banner" data-menutimeout="2">
@@ -87,7 +91,9 @@
 				<i class="fa fa-bars"></i>
 			</span>			
 		</div>
+		
+	<!-- <?php echo basename( get_page_template() ); ?> -->
+	
+	
 		<div id="container" class="row left">
-			<?php
-			#var_dump( $category );
-			?>
+	<?php } ?>

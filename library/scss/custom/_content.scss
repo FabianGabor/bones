@@ -14,6 +14,10 @@ article {
 	border-width: 0 0 1px;
 	margin-bottom: 1.5em;
 	
+	.entry-title {
+		font-weight: 400;
+	}
+	
 	.excerpt-read-more, .more-link {		
 		overflow: hidden;
 		display: block;
@@ -50,7 +54,9 @@ article {
 	.article-footer {
 		margin: 0 0 1.5em;
 	}
-	
+}
+
+.archive, .category, .single {
 	.entry-content {
 		a {
 			border-bottom: 1px dotted #A5A5A5;

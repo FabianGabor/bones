@@ -1,0 +1,36 @@
+body.home {
+	background: url('../images/background.jpg') center top no-repeat;
+	background-size: cover;
+}
+
+#home {
+	position: fixed;
+	left: 0;
+	top: 37.5%;
+	width: 100%;
+	
+	margin-top: -6.9em;
+	
+
+	.logo {
+		margin: 1.5em 0 3em;
+	}
+
+	.inline-list-centered {
+		list-style: none;
+		text-align: center;
+		
+		li {
+			display: inline-block;
+			margin: 0 1.5em;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 400;
+			
+			a {
+				display: block;
+			}
+		}
+	}
+}

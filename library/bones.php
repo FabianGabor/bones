@@ -134,7 +134,7 @@ function bones_scripts_and_styles() {
 		wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
 		
 		// register font family
-		wp_register_style ('bones-fonts', 'http://fonts.googleapis.com/css?family=Quicksand:400,300,700');	
+		wp_register_style ('bones-fonts', 'http://fonts.googleapis.com/css?family=Quicksand:400,300,700|Open+Sans:400,300');	
 		wp_register_style ('font-awesome', '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
 
 
@@ -153,11 +153,13 @@ function bones_scripts_and_styles() {
 		wp_register_script( 'idle-timer', get_template_directory_uri() . '/library/js/vendor/idle-timer.js', array( 'jquery' ), null, true );
 		
 		
-		wp_register_script( 'foundation', get_template_directory_uri() . '/library/js/foundation/foundation.js', array( 'jquery' ), null, true );
-		wp_register_script( 'reveal', get_template_directory_uri() . '/library/js/foundation/foundation.reveal.js', array( 'foundation' ), null, true );
-		wp_register_script( 'tooltip', get_template_directory_uri() . '/library/js/foundation/foundation.tooltip.js', array( 'foundation' ), null, true );
+		//wp_register_script( 'foundation', get_template_directory_uri() . '/library/js/foundation/foundation.js', array( 'jquery' ), null, true );
+		//wp_register_script( 'reveal', get_template_directory_uri() . '/library/js/foundation/foundation.reveal.js', array( 'foundation' ), null, true );
+		//wp_register_script( 'tooltip', get_template_directory_uri() . '/library/js/foundation/foundation.tooltip.js', array( 'foundation' ), null, true );
 		
-		wp_register_script( 'sidenav', get_template_directory_uri() . '/library/js/vendor/sidenav.js', array( 'jquery', 'foundation' ), null, true );
+		wp_register_script( 'foundation-min', get_template_directory_uri() . '/library/js/min/foundation.combined.min.js', array( 'jquery' ), null, true );
+		
+		wp_register_script( 'sidenav', get_template_directory_uri() . '/library/js/vendor/sidenav.js', array( 'jquery', 'foundation-min' ), null, true );
 
 		// enqueue styles and scripts
 		wp_enqueue_script( 'bones-modernizr' );
@@ -179,9 +181,10 @@ function bones_scripts_and_styles() {
 		wp_enqueue_script( 'jquery' );
 		//wp_enqueue_script( 'idle-timer' );
 		
-		wp_enqueue_script( 'foundation' );
-		wp_enqueue_script( 'reveal' );
-		wp_enqueue_script( 'sidenav' );
+		//wp_enqueue_script( 'foundation' );
+		//wp_enqueue_script( 'reveal' );
+		wp_enqueue_script( 'foundation-min' );
+		//wp_enqueue_script( 'sidenav' );
 		//wp_enqueue_script( 'tooltip' );
 
 	}
@@ -238,6 +241,7 @@ function bones_theme_support() {
 	register_nav_menus(
 		array(
 			'main-nav' => __( 'The Main Menu', 'bonestheme' ),   // main nav in header
+			'home-nav' => __( 'The Home Menu', 'bonestheme' ),   // main nav on homepage
 			'footer-links' => __( 'Footer Links', 'bonestheme' ) // secondary nav in footer
 		)
 	);
@@ -253,16 +257,16 @@ function bones_main_nav() {
 	// display the wp3 menu if available
 	wp_nav_menu(array(
 		'container' => false,                           // remove nav container
-		'container_class' => 'menu clearfix',           // class of container (should you choose to use it)
-		'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
-		'menu_class' => 'nav top-nav clearfix',         // adding custom nav class
-		'theme_location' => 'main-nav',                 // where it's located in the theme
+		'container_class' => 'menu inline-list xs',           // class of container (should you choose to use it)
+		'menu' => __( 'The Home Menu', 'bonestheme' ),  // nav name
+		'menu_class' => 'nav inline-list-centered xs',     // adding custom nav class
+		'theme_location' => 'home-nav',                 // where it's located in the theme
 		'before' => '',                                 // before the menu
 		'after' => '',                                  // after the menu
 		'link_before' => '',                            // before each link
 		'link_after' => '',                             // after each link
 		'depth' => 0,                                   // limit the depth of the nav
-		'fallback_cb' => 'bones_main_nav_fallback'      // fallback function
+		//'fallback_cb' => 'bones_main_nav_fallback'      // fallback function
 	));
 } /* end bones main nav */
 

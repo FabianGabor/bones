@@ -88,7 +88,7 @@
 			<div class="large-10 medium-10 columns">
 
 				<header class="article-header">
-					<h3 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>			
+					<h2 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>			
 				</header>
 
 				<section class="entry-content clearfix">

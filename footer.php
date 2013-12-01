@@ -1,3 +1,4 @@
+<?php if ( basename( get_page_template() ) !== 'page-home.php' ) { ?>
 			<footer class="footer large-12 columns" role="contentinfo">
 
 				<div id="inner-footer" class="wrap clearfix">
@@ -11,6 +12,7 @@
 				</div>
 
 			</footer>
+<?php } ?>
 
 		</div>
 
