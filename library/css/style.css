@@ -5792,7 +5792,7 @@ th.hide-for-touch {
   left: 0;
   margin-left: 0.5em;
   position: fixed;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.75);
   top: 50%;
   z-index: 9999;
   cursor: pointer;
@@ -5816,6 +5816,7 @@ th.hide-for-touch {
 body.home {
   background: url("../images/background.jpg") center top no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 #home {
