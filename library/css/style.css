@@ -5948,6 +5948,10 @@ article .article-footer {
   display: block;
 }
 
+.post-categories {
+  margin: 0 0 3em;
+}
+
 .comments-count i:before {
   content: "";
 }

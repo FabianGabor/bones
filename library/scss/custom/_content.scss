@@ -86,10 +86,15 @@ article {
 	float: left;
 }
 
+
 .post-categories, .post-categories li {
 	margin: 0;
 	font-size: $xs-font-size;
 	display: block;
+}
+
+.post-categories {
+	margin: 0 0 3em;
 }
 
 .comments-count {
