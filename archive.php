@@ -81,7 +81,11 @@
 				
 				
 				<div class="h6">Categories:</div>
-				<?php echo get_the_category_list( ); ?> 
+				<?php echo get_the_category_list( ); ?>
+				
+				<div class="text-center">
+					<div class="fb-like" data-href="<?php the_permalink() ?>" data-width="70" data-layout="box_count" data-action="like" data-show-faces="true" data-share="false"></div>
+				</div>
 				
 			</aside>
 			

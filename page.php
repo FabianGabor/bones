@@ -8,40 +8,15 @@
 	
 </div>	
 
-<div id="main" class="large-8 medium-8 columns" role="main">
+<div id="main" class="large-12 medium-12 columns" role="main">
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-	<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+	<article id="post-<?php the_ID(); ?>" <?php # post_class( 'clearfix' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
 		<div class="row">
-			<!--
-			<aside class="large-2 medium-2 columns">
-			-->
-				<?php	
-				/*
-				printf(__( '
-					<time class="post-date" datetime="%1$s" pubdate>					
-						<div class="month">%2$s</div>
-						<div class="day h3">%3$s</div>
-						<div class="year">%4$s</div>
-					</time>						
-					', 'bonestheme' 
-					), 
-					get_the_time('Y-m-j'), 
-					get_the_time(__( 'M', 'bonestheme' )), 
-					get_the_time(__( 'j', 'bonestheme' )), 
-					get_the_time(__( 'Y', 'bonestheme' )), 				
-					get_the_category_list(', ')
-				);
-				*/
-				?>
-			<!--
-			</aside>
-			-->
-			
 			<div class="large-12 medium-12 columns">
-				<section class="entry-content clearfix" itemprop="articleBody">
+				<section class="entry-content" itemprop="articleBody">
 					<?php the_content(); ?>
 				</section>
 			</div>
@@ -58,7 +33,7 @@
 
 	<?php endwhile; else : ?>
 
-			<article id="post-not-found" class="hentry clearfix">
+			<article id="post-not-found" class="hentry">
 				<header class="article-header">
 					<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
 				</header>
